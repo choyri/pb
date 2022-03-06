@@ -36,7 +36,7 @@ app = create_app()
 
 
 if __name__ == '__main__':
-    host = os.environ.get('LISTEN_ADDRESS', '::1')
+    host = os.environ.get('LISTEN_ADDRESS', '0.0.0.0')
     port = os.environ.get('LISTEN_PORT', 10002)
 
     with app.app_context():
