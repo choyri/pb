@@ -27,7 +27,7 @@ convenience pastes from your terminal.
 api spec
 --------
 
-Implementers can read the complete API specification `here <https://ptpb.pw/a>`_.
+Implementers can read the complete API specification `here </a>`_.
 
 examples
 --------

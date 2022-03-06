@@ -377,3 +377,10 @@ def list_lexers():
 @paste.route('/ls')
 def list_styles():
     return DictResponse(list(get_all_styles()))
+
+
+@paste.route('/a')
+def api_spec():
+    # aglio -i pb-api.apib -o api.html
+    return render_template('api.html')
+
