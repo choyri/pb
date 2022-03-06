@@ -122,7 +122,7 @@ private pastes
 ^^^^^^^^^^^^^^
 
 Perhaps we have some super sekrit thing that we don't want be be
-guessable by base66 id:
+guessable by base64 id:
 
 .. code:: console
 
