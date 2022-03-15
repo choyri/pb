@@ -1,10 +1,14 @@
-FROM python:3.6-alpine
+FROM python:3.7-alpine
 
-WORKDIR /pb
-ADD . /build
+WORKDIR /app
 
-RUN apk add --no-cache --virtual .build-deps git \
-    && pip install /build \
-    && apk del .build-deps
+COPY requirements.txt .
+
+RUN apk add --no-cache git \
+    && pip install -r requirements.txt \
+    && apk del git \
+    && rm -rf /root/.cache
+
+COPY ./pb/ pb/
 
 CMD ["python", "-m", "pb"]
