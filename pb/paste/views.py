@@ -384,3 +384,8 @@ def api_spec():
     # aglio -i pb-api.apib -o api.html
     return render_template('api.html')
 
+
+@paste.route('/f')
+def form():
+    # source from https://github.com/sudokode/pbwww
+    return render_template('form.html')
